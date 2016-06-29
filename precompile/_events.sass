@@ -1,0 +1,46 @@
+.post
+  position: relative
+  margin-bottom: 30px
+  .post-image
+    width: 100%
+
+  .post-date
+    position: absolute
+    top: 0px
+    left: 25px
+    display: inline-block
+    padding-top: 17px
+    width: 60px
+    height: 80px
+    background-color: $color-danger
+    color: #fff
+    text-align: center
+    text-transform: uppercase
+    &:before, &:after
+     content: ''
+     position: absolute
+     bottom: -10px
+     width: 0px
+     height: 0px
+    &:before
+      left: 0px
+      border-top: 10px solid $color-danger
+      border-right: 50px solid transparent
+    &:after
+      right: 0px
+      border-top: 10px solid $color-danger
+      border-left: 50px solid transparent
+  .post-content
+    border-left: 1px solid $color-border
+    border-right: 1px solid $color-border
+    padding: 16px
+
+@media (max-width: 900px)
+  .post
+    .post-content
+      font-size: 10px
+
+
+
+
+
