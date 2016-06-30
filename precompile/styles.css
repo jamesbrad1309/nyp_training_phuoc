@@ -1,69 +1,142 @@
-/*
-Error: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.
-        on line 20 of _events.sass
-        from line 7 of styles.sass
+body {
+  font-size: 16px; }
 
-15:     background-color: $color-danger
-16:     color: #fff
-17:     text-align: center
-18:     text-transform: uppercase
-19:     &:before, &:after
-20:      content: ''
-21:      position: absolute
-22:      bottom: -10px
-23:      width: 0px
-24:      height: 0px
-25:     &:before
+.btn {
+  border-raidus: 0px;
+  text-transform: uppercase;
+  font-family: NYPFontRegular; }
 
-Backtrace:
-_events.sass:20
-styles.sass:7
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:486:in `block in tabulate'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `each_with_index'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:444:in `tabulate'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:409:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 20 of _events.sass\A         from line 7 of styles.sass\A \A 15:     background-color: $color-danger\A 16:     color: #fff\A 17:     text-align: center\A 18:     text-transform: uppercase\A 19:     &:before, &:after\A 20:      content: ''\A 21:      position: absolute\A 22:      bottom: -10px\A 23:      width: 0px\A 24:      height: 0px\A 25:     &:before"; }
+.btn:focus {
+  outline: 0; }
+
+.btn-success {
+  padding: 10px 10px; }
+
+.btn-info {
+  padding: 10px 10px; }
+
+.btn-danger {
+  font-weight: bold;
+  font-size: 20px; }
+
+.btn-primary {
+  font-size: 20px;
+  font-weight: bold; }
+
+.btn-angle {
+  color: #fff;
+  background-color: #031a82;
+  font-size: 20px;
+  padding: 10px 20px; }
+
+.btn-angle:hover, .btn-angle:focus {
+  color: #fff;
+  background-color: #021050; }
+
+h1, h2 {
+  color: #031a82; }
+
+.post {
+  position: relative;
+  margin-bottom: 30px; }
+  .post .post-image {
+    width: 100%; }
+  .post .post-date {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    display: inline-block;
+    padding-top: 17px;
+    width: 60px;
+    height: 80px;
+    background-color: #dc1916;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; }
+    .post .post-date:before, .post .post-date:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 0px; }
+    .post .post-date:before {
+      left: 0px;
+      border-top: 10px solid #dc1916;
+      border-right: 50px solid transparent; }
+    .post .post-date:after {
+      right: 0px;
+      border-top: 10px solid #dc1916;
+      border-left: 50px solid transparent; }
+  .post .post-content {
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    padding: 16px; }
+
+@media (max-width: 900px) {
+  .post .post-content {
+    font-size: 10px; } }
+.card {
+  position: relative;
+  margin: 15px 0px; }
+  .card .post-image {
+    width: 35%; }
+  .card .card-content {
+    position: absolute;
+    border: 1px solid #c6c6c6;
+    border-left: none;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 65%;
+    text-align: left;
+    padding: 20px 80px 20px 20px; }
+  .card .btn-info {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    font-size: 20px;
+    padding: 10px 20px; }
+  .card .btn-angle {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    font-size: 20px;
+    padding: 10px 20px; }
+  .card h2 {
+    font-weight: bold; }
+
+.breadcrumb a {
+  color: #c6c6c6; }
+
+.active a {
+  color: #031a82; }
+
+.carousel-item .item {
+  position: relative;
+  border: 1px solid #c6c6c6;
+  height: 250px; }
+  .carousel-item .item .item-content-image {
+    position: absolute;
+    left: 0px;
+    top: 19px;
+    width: 25%; }
+  .carousel-item .item .item-content {
+    position: absolute;
+    padding-right: 30px;
+    right: 0px;
+    top: 30px;
+    bottom: 30px;
+    width: 75%; }
+    .carousel-item .item .item-content strong:first-child {
+      color: #031a82; }
+    .carousel-item .item .item-content p {
+      margin-top: 20px; }
+
+.owl-controls {
+  text-align: left !important; }
+  .owl-controls .owl-buttons div {
+    background-color: #fff !important;
+    padding: 0px !important;
+    opacity: 1 !important; }
+
+/*# sourceMappingURL=styles.css.map */

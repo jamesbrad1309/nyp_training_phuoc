@@ -6,6 +6,9 @@ body {
   text-transform: uppercase;
   font-family: NYPFontRegular; }
 
+.btn:focus {
+  outline: 0; }
+
 .btn-success {
   padding: 10px 10px; }
 
@@ -29,15 +32,6 @@ body {
 .btn-angle:hover, .btn-angle:focus {
   color: #fff;
   background-color: #021050; }
-
-a {
-  font-family: NYPFontRegular; }
-
-.breadcrumb a {
-  color: #c6c6c6; }
-
-.active a {
-  color: #031a82; }
 
 h1, h2 {
   color: #031a82; }
@@ -111,3 +105,37 @@ h1, h2 {
     padding: 10px 20px; }
   .card h2 {
     font-weight: bold; }
+
+.breadcrumb a {
+  color: #c6c6c6; }
+
+.active a {
+  color: #031a82; }
+
+.carousel-item .item {
+  position: relative;
+  border: 1px solid #c6c6c6;
+  height: 250px; }
+  .carousel-item .item .item-content-image {
+    position: absolute;
+    left: 0px;
+    top: 19px;
+    width: 25%; }
+  .carousel-item .item .item-content {
+    position: absolute;
+    padding-right: 30px;
+    right: 0px;
+    top: 30px;
+    bottom: 30px;
+    width: 75%; }
+    .carousel-item .item .item-content strong:first-child {
+      color: #031a82; }
+    .carousel-item .item .item-content p {
+      margin-top: 20px; }
+
+.owl-controls {
+  text-align: left !important; }
+  .owl-controls .owl-buttons div {
+    background-color: #fff !important;
+    padding: 0px !important;
+    opacity: 1 !important; }

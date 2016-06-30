@@ -5,9 +5,22 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="precompile/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl-carousel/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl-carousel/owl.theme.css">
+
+    <!--  jQuery 1.7+  -->
+    <script src="owl-carousel/assets/js/jquery-1.9.1.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="owl-carousel/owl-carousel/owl.carousel.js"></script>
+
 </head>
 
 <body class="container">
@@ -155,6 +168,106 @@
         </div>
     </div>
 
+    <div id="owl-demo">
+        <div class="item carousel-item">
+            <div class="item">
+                <div class="item-content-image">
+                    <img src="images/testimonial/testimonial01.png" alt="item-content-image-1">
+                </div>
+                <div class="item-content">
+                    <strong>Ansley Chua</strong><br>
+                    <strong>Diplomain Information Technology Class of 2015</strong>
+                    <p>Lorem ipsum dolor sit amet, turpis arcu cum ultrices. Eros in ipsum, donec donec. Labore metus mattis sit integer</p>
+                </div>
+            </div>
+        </div>
+        <div class="item carousel-item">
+            <div class="item">
+                <div class="item-content-image">
+                    <img src="images/testimonial/testimonial01.png" alt="item-content-image-1">
+                </div>
+                <div class="item-content">
+                    <strong>Ansley Chua</strong><br>
+                    <strong>Diplomain Information Technology Class of 2015</strong>
+                    <p>Lorem ipsum dolor sit amet, turpis arcu cum ultrices. Eros in ipsum, donec donec. Labore metus mattis sit integer</p>
+                </div>
+            </div>
+        </div>
+        <div class="item carousel-item">
+            <div class="item">
+                <div class="item-content-image">
+                    <img src="images/testimonial/testimonial01.png" alt="item-content-image-1">
+                </div>
+                <div class="item-content">
+                    <strong>Ansley Chua</strong><br>
+                    <strong>Diplomain Information Technology Class of 2015</strong>
+                    <p>Lorem ipsum dolor sit amet, turpis arcu cum ultrices. Eros in ipsum, donec donec. Labore metus mattis sit integer</p>
+                </div>
+            </div>
+        </div>
+        <div class="item carousel-item">
+            <div class="item">
+                <div class="item-content-image">
+                    <img src="images/testimonial/testimonial01.png" alt="item-content-image-1">
+                </div>
+                <div class="item-content">
+                    <strong>Ansley Chua</strong><br>
+                    <strong>Diplomain Information Technology Class of 2015</strong>
+                    <p>Lorem ipsum dolor sit amet, turpis arcu cum ultrices. Eros in ipsum, donec donec. Labore metus mattis sit integer</p>
+                </div>
+            </div>
+        </div>
+        <div class="item carousel-item">
+            <div class="item">
+                <div class="item-content-image">
+                    <img src="images/testimonial/testimonial01.png" alt="item-content-image-1">
+                </div>
+                <div class="item-content">
+                    <strong>Ansley Chua</strong><br>
+                    <strong>Diplomain Information Technology Class of 2015</strong>
+                    <p>Lorem ipsum dolor sit amet, turpis arcu cum ultrices. Eros in ipsum, donec donec. Labore metus mattis sit integer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#owl-demo").owlCarousel({
+
+                autoPlay: 2000, //Set AutoPlay to 2 seconds
+
+                items: 3,
+                itemsDesktop: [1199,3],
+                itemsTablet: [768,1],
+                itemsMobile: [479,1],
+                pagination: false,
+                navigation: true,
+                navigationText: ['<button type="button" class="btn btn-angle"><i class="fa fa-angle-left"></i></button>','<button type="button" class="btn btn-angle"><i class="fa fa-angle-right"></i></button>']
+
+
+
+            });
+
+        });
+    </script>
+    <style>
+        #owl-demo .item{
+            margin: 3px;
+        }
+        #owl-demo .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        #owl-demo .carousel-item {
+            display: block;
+            width: 100%;
+            height: 250px;
+        }
+
+    </style>
 </body>
 
 </html>
