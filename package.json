@@ -1,0 +1,27 @@
+{
+  "name": "nyp_training_phuoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesbrad1309/nyp_training_phuoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesbrad1309/nyp_training_phuoc/issues"
+  },
+  "homepage": "https://github.com/jamesbrad1309/nyp_training_phuoc#readme"
+}
